@@ -87,3 +87,7 @@
     .desc strong {
       color: #333;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
