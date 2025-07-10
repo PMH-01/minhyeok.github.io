@@ -73,3 +73,43 @@ body {
 section {
   margin-top: 100px;
 }
+
+.section-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #2e2f33;
+}
+
+.edu-item {
+  margin-bottom: 40px;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu-header h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #2e2f33;
+  margin: 0;
+}
+
+.edu-period {
+  font-size: 14px;
+  color: #8c28dd;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.status.red {
+  color: red;
+}
