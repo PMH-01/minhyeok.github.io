@@ -121,3 +121,7 @@ section {
   color: red;
   font-weight: 500;
 }
+
+section:first-of-type {
+  margin-top: 0;
+}
