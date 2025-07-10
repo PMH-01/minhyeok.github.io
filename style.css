@@ -1,93 +1,75 @@
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Noto Sans KR', sans-serif;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    body {
-      display: flex;
-      height: 100vh;
-      background-color: #fff;
-    }
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
-    .sidebar {
-      width: 260px;
-      background-color: #8c28dd;
-      color: white;
-      padding: 40px 20px;
-    }
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #8c28dd;
+  padding: 40px 20px;
+  color: white;
+}
 
-    .sidebar ul {
-      list-style: none;
-      margin-top: 20px;
-    }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
 
-    .sidebar li {
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 18px;
-      color: #d1a7ff;
-    }
+.sidebar li {
+  margin-bottom: 20px;
+}
 
-    .sidebar li:first-child {
-      color: yellow;
-    }
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
 
-    .main {
-      flex: 1;
-      padding: 60px;
-    }
+.sidebar a:hover {
+  text-decoration: underline;
+}
 
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-bottom: 30px;
-    }
+.main {
+  margin-left: 260px;
+  padding: 40px;
+}
 
-    .profile-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
-    .name {
-      font-size: 48px;
-      font-weight: 900;
-      color: #2d2f33;
-    }
+.title {
+  font-size: 32px;
+  font-weight: 900;
+}
 
-    .subname {
-      font-size: 48px;
-      font-weight: 900;
-      color: #8c28dd;
-      margin-top: -10px;
-    }
+.subtitle {
+  font-size: 28px;
+  font-weight: 900;
+  color: #8c28dd;
+}
 
-    .contact {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #333;
-      font-weight: 700;
-    }
+.contact {
+  margin-top: 20px;
+  font-weight: 500;
+}
 
-    .contact span {
-      color: #8c28dd;
-    }
+.desc {
+  margin-top: 20px;
+  line-height: 1.8;
+}
 
-    .desc {
-      margin-top: 40px;
-      font-size: 15px;
-      line-height: 1.8;
-      color: #555;
-    }
-
-    .desc strong {
-      color: #333;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
+section {
+  margin-top: 100px;
+}
