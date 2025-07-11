@@ -99,6 +99,7 @@ section {
   text-transform: uppercase;
   color: #2e2f33;
   margin: 0;
+  white-space: nowrap;
 }
 
 .edu-date {
