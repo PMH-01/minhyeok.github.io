@@ -45,99 +45,6 @@ body {
   color: white;
 }
 
-/* 본문 영역 */
-.main {
-  margin-left: 260px;
-  padding: 40px;
-  flex: 1;
-}
-
-.profile-img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.title {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.subtitle {
-  font-size: 50px;
-  font-weight: 900;
-  color: #8c28dd;
-}
-
-.contact {
-  margin-top: 20px;
-  font-weight: 500;
-}
-
-.desc {
-  margin-top: 20px;
-  line-height: 1.8;
-}
-
-section {
-  margin-top: 100px;
-}
-
-.section-title {
-  font-size: 50px;
-  font-weight: 900;
-  margin-bottom: 40px;
-  color: #2c2c2c;
-}
-
-.edu-block {
-  margin-bottom: 50px;
-}
-.edu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.edu-mainTitle {
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #8c28dd;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.edu-date {
-  font-size: 14px;
-  color: #8c28dd;
-  font-weight: bold;
-}
-
-.edu-subTitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.edu-status {
-  font-size: 14px;
-  color: #666;
-  margin-top: 3px;
-}
-
-.edu-status.dropout {
-  color: red;
-  font-weight: 500;
-}
-
-section:first-of-type {
-  margin-top: 0;
-}
-
 /* 반응형 (768px 이하일 때) */
 @media screen and (max-width: 768px) {
   body {
@@ -187,4 +94,277 @@ section:first-of-type {
     font-size: 32px;
     text-align: center;
   }
+}
+
+
+/* 본문 영역 */
+.main {
+  margin-left: 260px;
+  padding: 40px;
+  flex: 1;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 50px;
+  font-weight: 900;
+  color: #8c28dd;
+}
+
+.contact {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.desc {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+/* 학력 사항 */
+.edu-block {
+  margin-bottom: 50px;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.edu-mainTitle {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.edu-date {
+  font-size: 14px;
+  color: #8c28dd;
+  font-weight: bold;
+}
+
+.edu-subTitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.edu-status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.edu-status.dropout {
+  color: red;
+  font-weight: 500;
+}
+
+/* 경력 사항 */
+.exp-block {
+  margin-bottom: 50px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.exp-mainTitle {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.exp-date {
+  font-size: 14px;
+  color: #8c28dd;
+  font-weight: bold;
+}
+
+.edu-subTitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.exp-status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.exp-status.dropout {
+  color: red;
+  font-weight: 500;
+}
+
+/* 교육 이수 */
+.tra-block {
+  margin-bottom: 50px;
+}
+
+.tra-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.tra-mainTitle {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tra-date {
+  font-size: 14px;
+  color: #8c28dd;
+  font-weight: bold;
+}
+
+.tra-subTitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.tra-status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.tra-status.dropout {
+  color: red;
+  font-weight: 500;
+}
+/* 기술 */
+.ski-block {
+  margin-bottom: 50px;
+}
+
+.ski-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.ski-mainTitle {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.ski-date {
+  font-size: 14px;
+  color: #8c28dd;
+  font-weight: bold;
+}
+
+.ski-subTitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.ski-status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.ski-status.dropout {
+  color: red;
+  font-weight: 500;
+}
+/* 팀 프로젝트 */
+.pro-block {
+  margin-bottom: 50px;
+}
+
+.pro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.pro-mainTitle {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.pro-date {
+  font-size: 14px;
+  color: #8c28dd;
+  font-weight: bold;
+}
+
+.pro-subTitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.pro-status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.pro-status.dropout {
+  color: red;
+  font-weight: 500;
 }
