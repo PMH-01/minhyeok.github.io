@@ -302,11 +302,6 @@ section:first-of-type {
   white-space: nowrap;
 }
 
-.ski-date {
-  font-size: 14px;
-  color: #8c28dd;
-  font-weight: bold;
-}
 
 .ski-subTitle {
   font-size: 20px;
@@ -324,6 +319,29 @@ section:first-of-type {
   color: red;
   font-weight: 500;
 }
+
+.ski-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.ski-icons img {
+  height: 28px;
+}
+
+.ski-description ul {
+  list-style-type: '✔ ';
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.ski-description li {
+  font-size: 16px;
+  color: #444;
+}
+
 /* 팀 프로젝트 */
 .pro-block {
   margin-bottom: 50px;
