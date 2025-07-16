@@ -300,8 +300,7 @@ section:first-of-type {
   text-transform: uppercase;
   margin: 0;
   white-space: nowrap;
-  color: lightgrey;
-} 
+}
 
 
 .ski-subTitle {
@@ -340,7 +339,6 @@ section:first-of-type {
 .ski-description li {
   font-size: 16px;
   color: #444;
-  list-style-type: '✔ ';
 }
 
 /* 팀 프로젝트 */
