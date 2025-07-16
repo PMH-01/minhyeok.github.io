@@ -1,3 +1,4 @@
+/* 기본 설정 */
 html {
   scroll-behavior: smooth;
 }
@@ -7,6 +8,9 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   display: flex;
   flex-direction: row;
+  background-color: #fff;
+  color: #2e2f33;
+  box-sizing: border-box;
 }
 
 /* 사이드바 */
@@ -19,7 +23,7 @@ body {
   background-color: #8c28dd;
   padding: 40px 20px;
   color: white;
-  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .sidebar ul {
@@ -29,23 +33,141 @@ body {
 }
 
 .sidebar li {
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin: 20px 0;
 }
 
 .sidebar a {
-  color: yellow;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
 }
 
 .sidebar a:hover {
   text-decoration: underline;
-  color: white;
+  color: #ffd700;
 }
 
-/* 반응형 (768px 이하일 때) */
+/* 메인 콘텐츠 */
+.main {
+  margin-left: 260px;
+  padding: 40px 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 프로필 */
+.profile-img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* 제목 */
+.title,
+.subtitle,
+.section-title {
+  font-weight: 900;
+  color: #2e2f33;
+  margin: 10px 0;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.subtitle {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  border-bottom: 3px solid #8c28dd;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* 설명 텍스트 */
+.contact, .desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* 블록 구조 */
+.edu-block, .exp-block, .tra-block, .pro-block {
+  margin-bottom: 20px;
+}
+
+.edu-header, .exp-header, .tra-header, .pro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu-mainTitle, .exp-mainTitle, .tra-mainTitle, .pro-mainTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.edu-subtitle, .edu-status, .tra-subTitle, .exp-date, .edu-date {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* 기술 아이콘 */
+.ski-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 20px;
+}
+
+.ski-icons img {
+  height: 28px;
+}
+
+/* 기술 설명 */
+.skill-description ul,
+.skill-description li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.skill-description strong {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* 프로젝트 링크 */
+.pro-mainTitle a {
+  color: #2e2f33;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.pro-mainTitle a:hover {
+  text-decoration: underline;
+}
+
+/* 구분선 */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 40px 0;
+}
+
+/* 반응형: 모바일 화면 */
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
@@ -55,333 +177,65 @@ body {
     position: relative;
     width: 100%;
     height: auto;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 10px 0;
+    background-color: #8c28dd;
   }
 
   .sidebar ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    padding: 0;
   }
 
   .sidebar li {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 10px 15px;
   }
 
   .main {
-    margin-left: 0;
+    margin-left: 0 !important;
     padding: 20px;
   }
 
   .title,
   .subtitle {
-    font-size: 36px;
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 6vw;
     text-align: center;
   }
 
   .profile-img {
-    display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
   }
 
-  .section-title {
-    font-size: 32px;
+  .contact, .desc {
+    word-break: keep-all;
+    font-size: 15px;
     text-align: center;
   }
-}
 
+  .ski-icons {
+    justify-content: center;
+  }
 
-/* 본문 영역 */
-.main {
-  margin-left: 260px;
-  padding: 40px;
-  flex: 1;
-}
+  .ski-icons img {
+    height: 24px;
+    margin: 4px;
+  }
 
-.profile-img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
+  .skill-description ul {
+    padding: 0 10px;
+  }
 
-.title {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.subtitle {
-  font-size: 50px;
-  font-weight: 900;
-  color: #8c28dd;
-}
-
-.contact {
-  margin-top: 20px;
-  font-weight: 500;
-}
-
-.desc {
-  margin-top: 20px;
-  line-height: 1.8;
-}
-
-section {
-  margin-top: 100px;
-}
-
-.section-title {
-  font-size: 50px;
-  font-weight: 900;
-  margin-bottom: 40px;
-  color: #2c2c2c;
-}
-
-section:first-of-type {
-  margin-top: 0;
-}
-
-/* 학력 사항 */
-.edu-block {
-  margin-bottom: 50px;
-}
-
-.edu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.edu-mainTitle {
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.edu-date {
-  font-size: 14px;
-  color: #8c28dd;
-  font-weight: bold;
-}
-
-.edu-subTitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.edu-status {
-  font-size: 14px;
-  color: #666;
-  margin-top: 3px;
-}
-
-.edu-status.dropout {
-  color: red;
-  font-weight: 500;
-}
-
-/* 경력 사항 */
-.exp-block {
-  margin-bottom: 50px;
-}
-
-.exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.exp-mainTitle {
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.exp-date {
-  font-size: 14px;
-  color: #8c28dd;
-  font-weight: bold;
-}
-
-.edu-subTitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.exp-status {
-  font-size: 14px;
-  color: #666;
-  margin-top: 3px;
-}
-
-.exp-status.dropout {
-  color: red;
-  font-weight: 500;
-}
-
-/* 교육 이수 */
-.tra-block {
-  margin-bottom: 50px;
-}
-
-.tra-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.tra-mainTitle {
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.tra-date {
-  font-size: 14px;
-  color: #8c28dd;
-  font-weight: bold;
-}
-
-.tra-subTitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.tra-status {
-  font-size: 14px;
-  color: #666;
-  margin-top: 3px;
-}
-
-.tra-status.dropout {
-  color: red;
-  font-weight: 500;
-}
-/* 기술 */
-.ski-block {
-  margin-bottom: 50px;
-}
-
-.ski-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.ski-mainTitle {
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  white-space: nowrap;
-}
-
-
-.ski-subTitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.ski-status {
-  font-size: 14px;
-  color: #666;
-  margin-top: 3px;
-}
-
-.ski-status.dropout {
-  color: red;
-  font-weight: 500;
-}
-
-.ski-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.ski-icons img {
-  height: 28px;
-}
-
-.ski-description ul {
-  padding-left: 20px;
-  line-height: 1.8;
-}
-
-.ski-description li {
-  font-size: 16px;
-  color: #444;
-}
-
-/* 팀 프로젝트 */
-.pro-block {
-  margin-bottom: 50px;
-}
-
-.pro-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-}
-
-.pro-mainTitle {
-  font-size: 35px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.pro-date {
-  font-size: 14px;
-  color: #8c28dd;
-  font-weight: bold;
-}
-
-.pro-subTitle {
-  font-size: 20px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.pro-status {
-  font-size: 14px;
-  color: #666;
-  margin-top: 3px;
-}
-
-.pro-status.dropout {
-  color: red;
-  font-weight: 500;
+  .pro-mainTitle a {
+    font-size: 16px;
+    word-break: break-word;
+  }
 }
