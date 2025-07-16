@@ -300,7 +300,8 @@ section:first-of-type {
   text-transform: uppercase;
   margin: 0;
   white-space: nowrap;
-}
+  color: lightgrey;
+} 
 
 
 .ski-subTitle {
