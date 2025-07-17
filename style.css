@@ -116,10 +116,17 @@ strong {
   font-weight: 700;
 }
 
-.edu-subtitle, .edu-status, .tra-subTitle, .exp-date, .edu-date {
+.edu-subtitle, .edu-status, .tra-subTitle {
   font-size: 16px;
   margin-top: 5px;
 }
+
+.exp-date, .edu-date, .tra-date, .pro-date{
+  font-size: 16px;
+  margin-top: 5px;
+  color: #8c28dd;
+}
+
 
 /* 기술 아이콘 */
 .ski-icons {
