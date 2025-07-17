@@ -167,6 +167,13 @@ strong {
   text-decoration: underline;
 }
 
+.pro-note {
+  width: 700px; 
+  word-break: keep-all;  
+  white-space: normal;   
+  line-height: 1.6;
+}
+
 /* 구분선 */
 hr {
   border: none;
