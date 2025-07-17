@@ -85,10 +85,9 @@ body {
 
 .section-title {
   font-size: 50px;
-  color:#8c28dd;
+  border-bottom: 3px solid #8c28dd;
   display: inline-block;
   margin-bottom: 20px;
-
 }
 
 /* 설명 텍스트 */
@@ -113,7 +112,7 @@ strong {
 }
 
 .edu-mainTitle, .exp-mainTitle, .tra-mainTitle, .pro-mainTitle {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
 }
 
