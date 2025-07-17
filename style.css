@@ -85,7 +85,7 @@ body {
 
 .section-title {
   font-size: 32px;
-  border-bottom: 3px solid #8c28dd;
+  color:#8c28dd;
   display: inline-block;
   margin-bottom: 20px;
 }
